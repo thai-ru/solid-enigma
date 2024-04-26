@@ -17,6 +17,9 @@ struct ContentView: View {
                 List {
                     ForEach(menu){ section in
                         Section(section.name){
+//                            Text(section.name)
+//                                .font(.title3)
+//                                .foregroundStyle(.secondary)
                             ForEach(section.items) { item in
                                 NavigationLink(value: item) {
                                     ItemRow(item: item)
