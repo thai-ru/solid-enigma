@@ -15,7 +15,10 @@ struct CheckoutView: View {
     @State private var addloyaltyDetails = false
     @State private var loyaltyNumber = ""
     
+    @State private var tipAmount = 15
+    
     let paymentTypes = ["Cash", "Credit Card", "Loyalty Points"]
+    let tipAmounts = [10, 15, 20, 25, 0]
     
     
     var body: some View {
@@ -30,10 +33,22 @@ struct CheckoutView: View {
                     }
             }
             
-            Toggle("Add iDine loyalty card", isOn: $addloyaltyDetails.animation())
+            Section {
+                Toggle("Add iDine loyalty card", isOn: $addloyaltyDetails.animation())
+                
+                if addloyaltyDetails {
+                    TextField("Enter iDne ID", text: $loyaltyNumber)
+                }
+            }
             
-            if addloyaltyDetails {
-                TextField("Enter iDne ID", text: $loyaltyNumber)
+            Section("Feeling Generous! Tip Here") {
+                Picker("Percentage:", selection: $tipAmount){
+                    ForEach(tipAmounts, id: \.self) {
+                        Text("\($0)%")
+                    }
+                }
+                .pickerStyle(.segmented)
+                .padding()
             }
             
         }
