@@ -17,6 +17,9 @@
 		004D53AA2BCF2056001C03D2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004D53A92BCF2056001C03D2 /* Menu.swift */; };
 		004D53AC2BCF221A001C03D2 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004D53AB2BCF221A001C03D2 /* ItemRow.swift */; };
 		004D53AE2BCF29BE001C03D2 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004D53AD2BCF29BE001C03D2 /* ItemDetail.swift */; };
+		00AF14952BDEEAA900640225 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF14942BDEEAA900640225 /* OrderView.swift */; };
+		00AF14972BDEFE3900640225 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF14962BDEFE3900640225 /* MainView.swift */; };
+		00AF14992BDF004800640225 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF14982BDF004800640225 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		004D53A92BCF2056001C03D2 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = ../../../Downloads/idine/Menu.swift; sourceTree = "<group>"; };
 		004D53AB2BCF221A001C03D2 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		004D53AD2BCF29BE001C03D2 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		00AF14942BDEEAA900640225 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		00AF14962BDEFE3900640225 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		00AF14982BDF004800640225 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,9 @@
 				004D53A52BCF18AA001C03D2 /* Order.swift */,
 				004D53A32BCF1886001C03D2 /* Helper.swift */,
 				004D53952BCF16F9001C03D2 /* IDineApp.swift */,
+				00AF14942BDEEAA900640225 /* OrderView.swift */,
+				00AF14962BDEFE3900640225 /* MainView.swift */,
+				00AF14982BDF004800640225 /* CheckoutView.swift */,
 				004D53972BCF16F9001C03D2 /* ContentView.swift */,
 				004D53AD2BCF29BE001C03D2 /* ItemDetail.swift */,
 				004D53AB2BCF221A001C03D2 /* ItemRow.swift */,
@@ -157,6 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				004D53AE2BCF29BE001C03D2 /* ItemDetail.swift in Sources */,
+				00AF14972BDEFE3900640225 /* MainView.swift in Sources */,
+				00AF14992BDF004800640225 /* CheckoutView.swift in Sources */,
+				00AF14952BDEEAA900640225 /* OrderView.swift in Sources */,
 				004D53982BCF16F9001C03D2 /* ContentView.swift in Sources */,
 				004D53AC2BCF221A001C03D2 /* ItemRow.swift in Sources */,
 				004D53962BCF16F9001C03D2 /* IDineApp.swift in Sources */,
