@@ -12,11 +12,14 @@ struct CheckoutView: View {
     @EnvironmentObject var order: Order
     @State private var paymentType = "Cash"
     
+    @State private var addloyaltyDetails = false
+    @State private var loyaltyNumber = ""
+    
     let paymentTypes = ["Cash", "Credit Card", "Loyalty Points"]
     
     
     var body: some View {
-        VStack {
+        Form {
             Section {
                 Picker(
                     "Select payment option!",
@@ -26,6 +29,13 @@ struct CheckoutView: View {
                         }
                     }
             }
+            
+            Toggle("Add iDine loyalty card", isOn: $addloyaltyDetails.animation())
+            
+            if addloyaltyDetails {
+                TextField("Enter iDne ID", text: $loyaltyNumber)
+            }
+            
         }
         .navigationTitle("Payment")
         .navigationBarTitleDisplayMode(.inline)
