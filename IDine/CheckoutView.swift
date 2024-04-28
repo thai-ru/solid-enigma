@@ -9,11 +9,11 @@ import SwiftUI
 
 struct CheckoutView: View {
     
-    @Environment var order: Order
+    @EnvironmentObject var order: Order
+    @State private var paymentType = "Cash"
     
     let paymentTypes = ["Cash", "Credit Card", "Loyalty Points"]
     
-    @State private var paymentType = "Cash"
     
     var body: some View {
         VStack {
